@@ -57,6 +57,9 @@
       0,                // button                     
       null              // relatedTarget              
     );
+    
+    // Add flag to make obvious event is simulated.
+    simulatedEvent.simulated = true;
 
     // Dispatch the simulated event to the target element
     event.target.dispatchEvent(simulatedEvent);
